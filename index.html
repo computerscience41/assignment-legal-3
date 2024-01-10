@@ -15,6 +15,7 @@
             clifford: '#da373d',
             gray: '#707070',
             yellow: '#B68C5A',
+            whites: '#E7E7E7',
           },
           fontFamily: {
             EbGaramond: ['EB Garamond', 'serif'],
@@ -30,22 +31,34 @@
   <header>
     <!-- navbar design  -->
 
-    <nav>
-      <div class="flex justify-between h-20 w-full max-w-7xl mx-auto items-center">
+    <nav class="h-20 fixed  bg-white top-0 left-0 right-0">
+      <div class="lg:flex md:flex justify-between  w-full max-w-7xl mx-auto items-center px-5">
         <img class="" src="images/logo2.png" alt="">
         <div>
-          <ul class="flex gap-8 font-poppins font-normal text-base">
-            <li class="text-gray ">Home</li>
+          <ul class="lg:flex md:flex   mt-5 mb-5 ms-5 gap-8 font-poppins font-normal text-base">
+            <li class="text-gray">Home</li>
             <li class="text-gray">Services <i class="fa-solid fa-angle-right text-gray"></i></li>
             <li class="text-gray">Cases <i class="fa-solid fa-angle-right text-gray"></i></li>
             <li class="text-gray">Blog <i class="fa-solid fa-angle-right text-gray"></i></li>
             <li class="text-gray">Contact Us <i class="fa-solid fa-angle-right text-gray"></i></li>
           </ul>
         </div>
-        <button class="font-poppins font-semibold text-white text-lg bg-yellow py-4 px-7 rounded-lg">Free
+        <button class="font-poppins font-semibold text-white text-lg bg-yellow py-3 px-6 rounded-lg">Free
           Consultation</button>
       </div>
     </nav>
+
+    <section class="h-screen bg-[url('./images/banner.png')] bg-cover  mb-40">
+      <div class="mx-auto w-full h-full max-w-7xl items-center text-center p-5 md:pt-20 lg:pt-40">
+        <h1 class="font-EbGaramond font-extrabold text-7xl text-white mb-6">We Provide Effective <br> Legal Solutions</h1>
+        <p class="font-poppins font-normal text-whites text-base mb-8 ">There are many variations of passages of Lorem
+          Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+        <input class="bg-white py-4 px-7 rounded-lg text-gray text-base " type="search" name="" id=""
+          placeholder="Search your services">
+        <button
+          class="font-poppins font-semibold text-white text-lg bg-yellow py-3 px-7 rounded-lg ms-3">Search</button>
+      </div>
+    </section>
   </header>
 
   <main>
